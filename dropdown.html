@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <header>
+        <img src="images/header/logo.svg" alt="Logo" id="logo">
+        <nav class="navigation">
+            <ul class="nav-list">
+
+                <li><a href="#" onclick="features_dropdown()">Features <img id="arrow_feature" src="images/header/arrow.png" alt="" width="13px"></a>
+                    <div class="features-dd dropdown_menu" id="features_dropdown_menu">
+                        <a href="#"><img src="images/header/icon-todo.svg" alt=""> Todo List</a>
+                        <a href="#"><img src="images/header/icon-calendar.svg" alt=""> Calendar</a>
+                        <a href="#"><img src="images/header/icon-reminders.svg" alt=""> Reminders</a>
+                        <a href="#"><img src="images/header/icon-planning.svg" alt=""> Planning</a>
+                    </div>
+                </li>
+
+                <li><a href="#" onclick="company_dropdown()">Company <img id="arrow_company" src="images/header/arrow.png" alt="" width="13px"></a>
+                    <div class="company-dd dropdown_menu" id="company_dropdown_menu">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+         
+        </nav>
+        <div class="login-register">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+
+
+        <!--burger menu-->
+
+        </div>
+            <div class="burger-menu-icon" id="burger_icon">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+        <div class="burger-menu-screen" id="burger_menu">
+            <ul class="burger-list">
+
+                <li><a href="#" onclick="features_burger()">Features <img id="arrow_feature_bg" src="images/header/arrow.png" alt="" width="13px"></a>
+                    <div class="features-bg burger_menu" id="features_burger_menu">
+                        <a href="#"><img src="images/header/icon-todo.svg" alt=""> Todo List</a>
+                        <a href="#"><img src="images/header/icon-calendar.svg" alt=""> Calendar</a>
+                        <a href="#"><img src="images/header/icon-reminders.svg" alt=""> Reminders</a>
+                        <a href="#"><img src="images/header/icon-planning.svg" alt=""> Planning</a>
+                    </div>
+                </li>
+
+                <li><a href="#" onclick="company_burger()">Company <img id="arrow_company_bg" src="images/header/arrow.png" alt="" width="13px"></a>
+                    <div class="company-bg burger_menu" id="company_burger_menu">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+                
+                <div class="login-register-bg">
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+            </ul>
+
+
+    </header>
+
+    <section>
+        <div>
+            <div>
+                <h1>Make<br> remote work</h1>
+                <p>Get your team in sync, no matter your location.<br> 
+                Streamline processes. Create team rituals, and<br> 
+                watch productivity soar.</p>
+                <button>Learn more</button>
+            </div>
+
+
+            <footer>
+                <img src="images/footer/client-databiz.svg" alt="">
+                <img src="images/footer/client-audiophile.svg" alt="">
+                <img src="images/footer/client-meet.svg" alt="">
+                <img src="images/footer/client-maker.svg" alt="">
+            </footer>
+        </div>
+
+        <aside>
+            <picture class="image" alt="Imagem">
+                <source media="(min-width: 1200px)" srcset="https://cdn.discordapp.com/attachments/699719411313147937/1110289844556542073/image-hero-desktop.png">
+                <source media="(max-width: 1200px)" srcset="https://cdn.discordapp.com/attachments/699719411313147937/1110289844925632682/image-hero-mobile.png">
+                <img src="images/image-hero-desktop.png" alt="">
+            </picture>
+            
+        </aside>
+    </section>
+    
+
+
+</body>
+
+<script src="dropdown.js"></script>
+</html>

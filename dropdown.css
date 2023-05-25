@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Epilogue', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+/*----------HEADER----------*/
+
+header{
+    width: 97%;
+    padding: 30px;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1;
+}
+
+    .navigation{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        left: 200px;
+    }
+
+        .nav-list{
+            position: absolute;
+            display: flex;
+            gap: 50px;
+            
+        }
+            .nav-list li a{
+                display: flex;
+                align-items: center;
+
+                color: hsla(0, 0%, 41%, 0.845);
+                font-size: 1.6rem;
+            }
+            .nav-list li a:hover{
+                color: hsl(0, 0%, 0%);
+            }
+
+            .nav-list li a img{
+                margin-left: 5px;
+                opacity: 0.7;
+            }
+            .nav-list li a:hover img{
+                opacity: 1;
+            }
+            
+
+            .dropdown_menu{
+                width: 160px;
+                padding: 10px;
+                border-radius: 10px;
+
+                position: absolute;
+                top: 30px;
+                display: none;
+                flex-direction: column;
+                box-sizing: border-box;
+
+                
+                box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.241);
+                background-color: white;
+            }
+                .features-dd{
+                    left: -80px;
+                }
+                    .features-dd img{
+                        width: 15px;
+                        margin-right: 10px;
+                    }
+
+                .company-dd{
+                    left: 145px;
+                }
+
+                .dropdown_menu a{
+                    margin: 10px;
+                }
+
+.login-register {
+    display: flex;
+    margin-left: 70%;
+}
+.login-register button{
+    width: 100px;
+    height: 40px;
+    
+    font-family: 'Epilogue', sans-serif;
+    background-color: white;
+    cursor: pointer;
+    color: hsla(0, 0%, 41%, 0.841);
+    border: none;
+
+}
+    .login-register button:hover{
+        border: 2px solid black;
+        border-radius: 10px;
+        color: hsl(0, 0%, 0%);
+    }
+
+
+/*----------SECTION----------*/
+section{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+    align-items: center;
+}
+    section div div h1{
+        font-size: 80px; 
+        margin: 30px;
+    }
+
+    p{
+        margin-top: 40px;
+        margin: 30px;
+        margin-bottom: 50px;
+
+        font-size: 1.8rem;
+        color: hsla(0, 0%, 41%, 0.795);
+        line-height: 2.8rem;
+    }
+
+    section div div button{
+        width: 180px;
+        height: 60px;
+
+        font-family: 'Epilogue', sans-serif;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 17px;
+    }
+
+    .burger-list{
+        display: none;
+    }
+    section div div button:hover{
+        border: 2px solid black;
+        background-color: white;
+        color: hsl(0, 0%, 0%);
+    }
+
+    footer{
+        width: 52rem;
+
+        position: absolute;
+        display: flex;
+        margin-top: 90px;
+        gap: 5.0rem;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px){
+        section aside picture img{
+            margin-left: 70px;
+            width: 550px; 
+            height: 650px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        section{
+            flex-direction: column;
+        }
+            section aside{
+                order: -1;
+            }
+            section div{
+                text-align: center;
+            }
+            section div div h1{
+                margin-top: 60px;
+            }
+            section div div h1 br{
+                display: none;
+            }
+            section div footer{
+                width: 100%;
+
+                align-items: center;
+                justify-content: center;
+                left: 0;
+            }
+            section aside picture img{
+                height: auto;
+                width: 100vw; 
+                max-width: 670px;
+                max-height: 670px;
+            }
+
+    }
+    @media screen and (max-width: 900px) {
+        section aside picture img{
+            width: 100vw; 
+            height: auto;
+        }
+        section{
+            top: 100px;
+        }
+        
+        /*burger menu*/
+        .nav-list, .login-register{
+            display: none;
+        }
+
+        .one,
+        .two,
+        .three{
+            height: 4px;
+            width: 100%;
+            margin: 6px auto;
+
+            background-color: black;
+        }
+        .burger-menu-icon{
+            width: 40px;
+            height: 30px;
+
+            position: absolute;
+            right: 30px;
+            z-index: 11;
+
+            cursor: pointer;
+        }
+    
+        .burger-menu-screen{
+            height: 1000px;
+            width: 70vw;
+            padding: 30px;
+
+            display: none;
+            position: absolute;
+            right: -30px;
+            top: 0px;
+            z-index: 10;
+
+            background-color: rgb(250, 250, 250);
+            box-shadow: 10px 10px 100px black;
+
+        }
+        .burger-list{
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 20px;
+            gap: 30px;
+
+            position: relative;
+            top: 70px;
+            
+        }
+        .burger_menu{
+            display: none;/*flex*/
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+            left: 30px;
+            margin-top: 20px;
+        }
+
+        .login-register-bg button{
+            width: 130px;
+            height: 50px;
+
+            border: none;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 16px;
+            background-color: white;
+            cursor: pointer;
+            color: hsla(0, 0%, 26%, 0.841);
+        }
+            .login-register-bg button:hover{
+                border: 2px solid black;
+                border-radius: 10px;
+                color: hsl(0, 0%, 0%);
+            }
+    }
+
+    @media screen and (max-width: 585px){
+        html{
+            font-size: 40%;
+        }
+        section{
+            top: 100px;
+        }
+        footer {
+            width: 250px;
+            
+            gap: 15px;
+            margin-top: 40px;
+        }
+        section div div{
+            width: 100%;
+        }
+        p{
+            font-size: 14px;
+            line-height: 3.5rem;
+        }
+        section div div h1 br{
+            display: block;
+        }
+        section div div h1{
+            font-size: 55px;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width: 430px){
+        section div div h1{
+            font-size: 48px;
+        }
+        section div div p{
+            font-size: 13px;
+        }
+        footer {
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+    }
